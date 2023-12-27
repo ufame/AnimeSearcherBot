@@ -1,4 +1,4 @@
-import { Bot, Context } from "grammy";
+import { Bot } from "grammy";
 import { InputMediaPhoto } from "grammy/types";
 
 const token = process.env.BOT_TOKEN;
@@ -7,7 +7,7 @@ if (token === undefined) throw new Error("Missing <BOT_TOKEN> envirovment");
 
 const bot = new Bot(token);
 
-bot.on(":photo", async (ctx: Context) => {
+bot.on(":photo", async (ctx) => {
   const file = await ctx.getFile();
   const telegramFileLink = `https://api.telegram.org/file/bot${token}/${file.file_path}`;
   const AniListLink = "https://anilist.co/search/anime?search=";
