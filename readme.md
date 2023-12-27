@@ -33,6 +33,15 @@ or `yarn`:
 yarn install
 ```
 
+After that you can compile TS to JS:
+```
+npx tsc
+```
+or
+```
+yarn tsc
+```
+
 Copy the example.env file to .env:
 ```
 cp .example.env .env
