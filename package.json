@@ -1,0 +1,19 @@
+{
+  "name": "anime-searcher-bot",
+  "version": "1.0.0",
+  "main": "./dist/bot.js",
+  "author": "ufame <m4tscz@ya.ru>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --env-file=.env ./dist/bot.js",
+    "dev": "tsc-watch --onSuccess \"yarn start\""
+  },
+  "dependencies": {
+    "grammy": "^1.19.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.3.3"
+  }
+}
